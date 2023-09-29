@@ -2,7 +2,7 @@ apiVersion: management.cattle.io/v3
 kind: Project
 metadata:
   name: kubectl-test-project
-  namespace: c-25d7j
+  namespace: c-m5szj
 spec:
-  clusterName: c-25d7j
-  displayName: just-kube-test
+  clusterName: c-m5szj
+  displayName: display-name-kubectl-test-project

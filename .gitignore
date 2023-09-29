@@ -521,3 +521,6 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/go,rust,node,macos,windows,linux,visualstudiocode,jetbrains,goland,notepadpp,sublimetext,vim
 
 local.yml
+local.yaml
+admin.yml
+admin.yaml

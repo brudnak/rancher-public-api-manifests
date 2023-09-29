@@ -2,5 +2,5 @@ apiVersion: management.cattle.io/v3
 kind: GlobalRoleBinding
 metadata:
   name: my-grb
-globalRoleName: admin
-userName: u-pvktl
+globalRoleName: global-role-with-inherited
+userName: u-n7g8w
