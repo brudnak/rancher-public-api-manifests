@@ -1,0 +1,13 @@
+apiVersion: management.cattle.io/v3
+kind: GlobalRole
+metadata:
+  name: global-role-with-inherited
+displayName: Global Role with Inherited Cluster Roles
+description: Global role with inherited cluster roles
+newUserDefault: true
+inheritedClusterRoles:
+  - cluster-admin
+rules:
+  - verbs: ['get', 'list']
+    resources: ['pods']
+    apiGroups: ['']

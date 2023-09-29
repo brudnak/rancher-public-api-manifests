@@ -1,0 +1,8 @@
+apiVersion: management.cattle.io/v3
+kind: Project
+metadata:
+  name: kubectl-test-project
+  namespace: c-25d7j
+spec:
+  clusterName: c-25d7j
+  displayName: just-kube-test

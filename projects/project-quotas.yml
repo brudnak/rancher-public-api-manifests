@@ -1,0 +1,39 @@
+apiVersion: management.cattle.io/v3
+kind: Project
+metadata:
+  name: project-with-all-quotas
+  namespace: c-6xfp8
+spec:
+  clusterName: c-6xfp8
+  containerDefaultResourceLimit: {}
+  displayName: 'NewProjectQ'
+  namespaceDefaultResourceQuota:
+    limit:
+      configMaps: '50'
+      limitsCpu: 50m
+      limitsMemory: 50Mi
+      persistentVolumeClaims: '50'
+      pods: '50'
+      replicationControllers: '50'
+      requestsCpu: 50m
+      requestsMemory: 50Mi
+      requestsStorage: 50Mi
+      secrets: '50'
+      services: '50'
+      servicesLoadBalancers: '50'
+      servicesNodePorts: '50'
+  resourceQuota:
+    limit:
+      configMaps: '2000'
+      limitsCpu: 2000m
+      limitsMemory: 2000Mi
+      persistentVolumeClaims: '2000'
+      pods: '2000'
+      replicationControllers: '2000'
+      requestsCpu: 2000m
+      requestsMemory: 2000Mi
+      requestsStorage: 2000Mi
+      secrets: '2000'
+      services: '2000'
+      servicesLoadBalancers: '2000'
+      servicesNodePorts: '2000'
