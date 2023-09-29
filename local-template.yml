@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Config
+clusters:
+  - name: 'rancher'
+    cluster:
+      server: '$SERVER_URL'
+      # Uncomment the following line if your server is using self-signed certs
+      # This option is not recommended for production
+      # insecure-skip-tls-verify: true
+
+users:
+  - name: 'rancher'
+    user:
+      token: '$API_KEY'
+
+contexts:
+  - name: 'rancher'
+    context:
+      user: 'rancher'
+      cluster: 'rancher'
+
+current-context: 'rancher'
